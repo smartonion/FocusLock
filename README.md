@@ -1,3 +1,5 @@
+<img src="icon.png" alt="[icon]" width="170" height="170"/>
+
 # FocusLock
 
 A simple Chrome extension to keep you focused on specified websites. If you wander off the allowed sites for too long, it automatically closes distracting tabs and redirects you back.
