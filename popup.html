@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>FocusLock</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-width: 300px;
-padding: 10px;
-}
-label {
-display: block;
-margin-top: 10px;
-}
-input, textarea {
-width: 100%;
-box-sizing: border-box;
-}
-button {
-margin-top: 10px;
-width: 100%;
-padding: 8px;
-}
-</style>
-</head>
-<body>
-<h2>FocusLock</h2>
-<label for="allowedUrls">Allowed URLs (comma separated):</label>
-<textarea id="allowedUrls" rows="3" placeholder="https://example.com, https://chat.openai.com"></textarea>
+  <head>
+    <title>FocusLock</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 10px;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>FocusLock</h2>
 
-<label for="gracePeriod">Grace Period (minutes):</label>
-<input type="number" id="gracePeriod" value="5" min="1">
+    <label for="allowedUrls">Allowed URLs (comma separated):</label>
+    <textarea
+      id="allowedUrls"
+      rows="3"
+      placeholder="https://example.com, https://chat.openai.com"
+    ></textarea>
 
-<label for="sessionDuration">Session Duration (minutes, optional):</label>
-<input type="number" id="sessionDuration" placeholder="60">
+    <label for="gracePeriod">Grace Period (minutes):</label>
+    <input type="number" id="gracePeriod" value="5" min="1" />
 
-<button id="startBtn">Start Session</button>
-<button id="endBtn" style="display: none;">End Session</button>
+    <label for="sessionDuration">Session Duration (minutes, optional):</label>
+    <input type="number" id="sessionDuration" placeholder="60" />
 
-<script src="popup.js"></script>
-</body>
+    <button id="startBtn">Start Session</button>
+    <button id="endBtn" style="display: none;">End Session</button>
+
+    <script src="popup.js"></script>
+  </body>
 </html>
